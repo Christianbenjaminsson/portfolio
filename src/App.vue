@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <Home />
+    <homePage />
   </div>
 </template>
 
 <script>
-import Home from "./components/Home";
+import homePage from "./components/home-page";
 
 export default {
   name: "App",
   components: {
-    Home,
+    homePage,
   },
+
+  homePage,
 };
 </script>
 
