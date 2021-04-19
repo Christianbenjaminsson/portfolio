@@ -4,12 +4,13 @@
       <div class="menu">
         <ul>
           <li><a href="./home-page.vue">Home</a></li>
-          <li><a href="./about-page.vue">About Me</a></li>
+          <li><a href="./about-page.vue">About</a></li>
           <li><a href="./cv-page.vue">CV</a></li>
           <li><a href="./contact-page.vue">Contact</a></li>
         </ul>
       </div>
     </div>
+    <div class="content"></div>
   </body>
 </template>
 
@@ -25,22 +26,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 body {
-  padding: 10px;
   margin: auto;
+  height: 100%;
 }
 
 .header {
-  position: relative;
+  height: 40px;
 }
 
 .menu ul {
   list-style: none;
+  text-align: center;
 }
 
 .menu li {
-  display: inline-block;
+  display: inline;
   margin-right: 15px;
-  align-items: center;
 }
 
 .menu a {
