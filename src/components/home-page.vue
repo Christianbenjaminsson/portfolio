@@ -11,28 +11,23 @@
       </div>
     </div>
     <div class="content">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">0</li>
-            <li class="glide__slide">1</li>
-            <li class="glide__slide">2</li>
-          </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            prev
-          </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            next
-          </button>
-        </div>
-      </div>
+      <carousel @next="next" @prev="prev">
+        <carousel-slide
+          v-for="(slide, index) in slides"
+          :key="slide"
+          :index="index"
+          :visibleSlide="visibleSlide"
+        >
+          <img :src="slide" />
+        </carousel-slide>
+      </carousel>
     </div>
   </body>
 </template>
 
 <script>
+import carousel from "./carousel";
+import carouselSlide from "./carouselSlide";
 export default {
   name: "HelloWorld",
   props: {
@@ -48,6 +43,31 @@ export default {
       ],
       visibleSlide: 0,
     };
+  },
+  computed: {
+    slidesLen() {
+      return this.slides.length;
+    },
+  },
+  methods: {
+    next() {
+      if (this.visibleSlide >= this.slidesLen - 1) {
+        this.visibleSlide = 0;
+      } else {
+        this.visibleSlide++;
+      }
+    },
+    prev() {
+      if (this.visibleSlide <= 0) {
+        this.visibleSlide = this.slidesLen - 1;
+      } else {
+        this.visibleSlide--;
+      }
+    },
+  },
+  components: {
+    carousel,
+    carouselSlide,
   },
 };
 </script>
