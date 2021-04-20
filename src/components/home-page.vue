@@ -10,7 +10,25 @@
         </ul>
       </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">0</li>
+            <li class="glide__slide">1</li>
+            <li class="glide__slide">2</li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            prev
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            next
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </template>
 
@@ -19,6 +37,17 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  data() {
+    return {
+      slides: [
+        "https://picsum.photos/id/237/600/350",
+        "https://picsum.photos/id/236/600/350",
+        "https://picsum.photos/id/235/600/350",
+        "https://picsum.photos/id/234/600/350",
+      ],
+      visibleSlide: 0,
+    };
   },
 };
 </script>
@@ -53,5 +82,12 @@ body {
 
 .menu a:hover {
   border-bottom: 1px solid black;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
