@@ -17,6 +17,7 @@
           :key="slide"
           :index="index"
           :visibleSlide="visibleSlide"
+          :direction="direction"
         >
           <img :src="slide" />
         </carousel-slide>
@@ -42,6 +43,7 @@ export default {
         "https://picsum.photos/id/234/600/350",
       ],
       visibleSlide: 0,
+      direction: "left",
     };
   },
   computed: {
@@ -56,6 +58,7 @@ export default {
       } else {
         this.visibleSlide++;
       }
+      this.direction = "left";
     },
     prev() {
       if (this.visibleSlide <= 0) {
@@ -63,6 +66,7 @@ export default {
       } else {
         this.visibleSlide--;
       }
+      this.direction = "right";
     },
   },
   components: {
