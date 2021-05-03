@@ -4,75 +4,29 @@
       <div class="menu">
         <ul>
           <li><a href="./home-page.vue">Home</a></li>
-          <li><a href="./about-page.vue">About</a></li>
-          <li><a href="./cv-page.vue">CV</a></li>
           <li><a href="./contact-page.vue">Contact</a></li>
+          <!--<li><a href="./about-page.vue">About</a></li>
+          <li><a href="./cv-page.vue">CV</a></li>-->
         </ul>
       </div>
     </div>
     <div class="content">
-      <carousel @next="next" @prev="prev">
-        <carousel-slide
-          v-for="(slide, index) in slides"
-          :key="slide"
-          :index="index"
-          :visibleSlide="visibleSlide"
-          :direction="direction"
-        >
-          <img :src="slide" />
-        </carousel-slide>
-      </carousel>
+      <h1>Driven systemutvecklare med erfarenhet av it-projekt</h1>
+      <p>Jag har...</p>
     </div>
   </body>
 </template>
 
 <script>
-import carousel from "./carousel";
-import carouselSlide from "./carouselSlide";
 export default {
-  name: "HelloWorld",
+  name: "HomePage",
   props: {
     msg: String,
   },
   data() {
-    return {
-      slides: [
-        "https://picsum.photos/id/237/600/350",
-        "https://picsum.photos/id/236/600/350",
-        "https://picsum.photos/id/235/600/350",
-        "https://picsum.photos/id/234/600/350",
-      ],
-      visibleSlide: 0,
-      direction: "left",
-    };
+    return {};
   },
-  computed: {
-    slidesLen() {
-      return this.slides.length;
-    },
-  },
-  methods: {
-    next() {
-      if (this.visibleSlide >= this.slidesLen - 1) {
-        this.visibleSlide = 0;
-      } else {
-        this.visibleSlide++;
-      }
-      this.direction = "left";
-    },
-    prev() {
-      if (this.visibleSlide <= 0) {
-        this.visibleSlide = this.slidesLen - 1;
-      } else {
-        this.visibleSlide--;
-      }
-      this.direction = "right";
-    },
-  },
-  components: {
-    carousel,
-    carouselSlide,
-  },
+  methods: {},
 };
 </script>
 
@@ -89,7 +43,9 @@ body {
 
 .menu ul {
   list-style: none;
-  text-align: center;
+  text-align: left;
+  margin-left: 40px;
+  padding: 20px;
 }
 
 .menu li {
@@ -99,7 +55,7 @@ body {
 
 .menu a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   color: black;
 }
@@ -111,6 +67,7 @@ body {
 .content {
   width: 100%;
   display: flex;
+  margin-top: 40px;
   justify-content: center;
   align-items: center;
 }
