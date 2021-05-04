@@ -11,8 +11,11 @@
       </div>
     </div>
     <div class="content">
-      <h1>Driven systemutvecklare med erfarenhet av it-projekt</h1>
-      <p>Jag har...</p>
+      <div class="content-header">
+        <h2>Driven systemutvecklare med erfarenhet av it-projekt</h2>
+      </div>
+      <div class="content-info"><p>Jag har...</p></div>
+      <div class="content-info"><p>Jag har...</p></div>
     </div>
   </body>
 </template>
@@ -65,10 +68,13 @@ body {
 }
 
 .content {
-  width: 100%;
-  display: flex;
+  max-width: 600px;
+  margin-top: 20px;
+  margin: auto;
+  padding: 10px;
+}
+
+.content-header {
   margin-top: 40px;
-  justify-content: center;
-  align-items: center;
 }
 </style>
