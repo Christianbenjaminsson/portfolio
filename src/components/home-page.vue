@@ -14,6 +14,7 @@
       <div class="content-header">
         <h2>Driven systemutvecklare med erfarenhet av it-projekt</h2>
       </div>
+      <img src="/assets/pexels.jpg" width="100" height="100" />
       <div class="content-info"><p>Jag har...</p></div>
       <div class="content-info"><p>Jag har...</p></div>
     </div>
@@ -36,6 +37,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 body {
+  max-width: 600px;
   margin: auto;
   height: 100%;
 }
@@ -47,7 +49,6 @@ body {
 .menu ul {
   list-style: none;
   text-align: left;
-  margin-left: 40px;
   padding: 20px;
 }
 
@@ -68,7 +69,6 @@ body {
 }
 
 .content {
-  max-width: 600px;
   margin-top: 20px;
   margin: auto;
   padding: 10px;
