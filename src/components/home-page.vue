@@ -1,6 +1,9 @@
 <template>
   <body>
     <div class="header">
+      <div class="header_name">
+        <p>Christian Benjaminsson</p>
+      </div>
       <div class="menu">
         <ul>
           <li><a href="./home-page.vue">Home</a></li>
@@ -14,9 +17,15 @@
       <div class="content-header">
         <h2>Driven systemutvecklare med erfarenhet av it-projekt</h2>
       </div>
-      <img src="/assets/pexels.jpg" width="100" height="100" />
-      <div class="content-info"><p>Jag har...</p></div>
-      <div class="content-info"><p>Jag har...</p></div>
+      <img src="@/assets/profile_pic.jpg" id="profile_pic" />
+      <div class="content-info">
+        <p>
+          Mina kunskaper: Java, IntelliJ IDEA, Github, Cypress, C++, Visual
+          Studio Code, Android Studio, C++, Atlassian (Jira), DBeaver, pgAdmin,
+          MongoDB, enhetstester, JavaScript, Node.js, HTML, CSS och
+          grundkunskaper inom React.js och Vue
+        </p>
+      </div>
     </div>
   </body>
 </template>
@@ -37,24 +46,25 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 body {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   height: 100%;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   height: 40px;
-}
-
-.menu ul {
-  list-style: none;
-  text-align: left;
   padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
 }
 
 .menu li {
   display: inline;
   margin-right: 15px;
+  color: black;
 }
 
 .menu a {
@@ -76,5 +86,13 @@ body {
 
 .content-header {
   margin-top: 40px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
 }
 </style>
