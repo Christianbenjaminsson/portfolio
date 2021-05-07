@@ -1,9 +1,9 @@
 <template>
   <body>
     <div class="header">
-      <div class="header_name">
-        <p>Christian Benjaminsson</p>
-      </div>
+      <p>Christian Benjaminsson</p>
+      <img src="@/assets/logo.png" id="logo" />
+      <div></div>
       <div class="menu">
         <ul>
           <li><a href="./home-page.vue">Home</a></li>
@@ -59,11 +59,17 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: black;
+  list-style: none;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
 }
 
 .menu li {
   display: inline;
-  margin-right: 15px;
+  list-style: none;
   color: black;
 }
 
@@ -88,7 +94,7 @@ body {
   margin-top: 40px;
 }
 
-img {
+#profile_pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
