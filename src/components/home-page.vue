@@ -11,17 +11,10 @@
       </div>
     </div>
     <div class="content">
-      <div class="content-header">
-        <h2>Driven systemutvecklare med erfarenhet av it-projekt</h2>
-      </div>
-      <div class="content-info">
-        <p>
-          Mina kunskaper: Java, IntelliJ IDEA, Github, Cypress, C++, Visual
-          Studio Code, Android Studio, C++, Atlassian (Jira), DBeaver, pgAdmin,
-          MongoDB, enhetstester, JavaScript, Node.js, HTML, CSS och
-          grundkunskaper inom React.js och Vue
-        </p>
-      </div>
+      <div class="box_one" id="squares"></div>
+      <div class="box_two" id="squares"></div>
+      <div class="box_three" id="squares"></div>
+      <div class="box_four" id="squares"></div>
     </div>
   </body>
 </template>
@@ -41,25 +34,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+html {
+  height: 100%;
+}
+
 body {
   max-width: 1200px;
+  min-height: 100%;
   margin: auto;
-  height: 100%;
 }
 
 .header {
   display: flex;
-  height: 40px;
+  height: 20%;
   padding: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: black;
   align-items: center;
 }
 
 #logo {
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
 }
 
 .nav_left,
@@ -74,7 +71,7 @@ body {
 
 li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
 }
 
 li a {
@@ -87,20 +84,74 @@ li a:hover {
 }
 
 .content {
-  margin-top: 20px;
+  height: 80%;
+  width: 900px;
   margin: auto;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content-header {
-  margin-top: 40px;
+#squares {
+  border-radius: 30px;
+  height: 300px;
+  width: 430px;
 }
 
-#profile_pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
-  width: 200px;
+.box_one {
+  background: #659999; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f4791f,
+    #659999
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f4791f,
+    #659999
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.box_two {
+  background: #544a7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd452,
+    #544a7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd452,
+    #544a7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.box_three {
+  background: #8360c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2ebf91,
+    #8360c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2ebf91,
+    #8360c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.box_four {
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 </style>
