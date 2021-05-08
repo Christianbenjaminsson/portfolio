@@ -1,15 +1,12 @@
 <template>
   <body>
     <div class="header">
-      <p>Christian Benjaminsson</p>
-      <img src="@/assets/logo.png" id="logo" />
-      <div></div>
-      <div class="menu">
+      <div class="nav_left"><p>Christian Benjaminsson</p></div>
+      <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
+      <div class="nav_right">
         <ul>
           <li><a href="./home-page.vue">Home</a></li>
           <li><a href="./contact-page.vue">Contact</a></li>
-          <!--<li><a href="./about-page.vue">About</a></li>
-          <li><a href="./cv-page.vue">CV</a></li>-->
         </ul>
       </div>
     </div>
@@ -17,7 +14,6 @@
       <div class="content-header">
         <h2>Driven systemutvecklare med erfarenhet av it-projekt</h2>
       </div>
-      <img src="@/assets/profile_pic.jpg" id="profile_pic" />
       <div class="content-info">
         <p>
           Mina kunskaper: Java, IntelliJ IDEA, Github, Cypress, C++, Visual
@@ -46,20 +42,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 body {
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
   height: 100%;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   height: 40px;
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
   color: black;
-  list-style: none;
+  align-items: center;
 }
 
 #logo {
@@ -67,21 +62,28 @@ body {
   width: 50px;
 }
 
-.menu li {
-  display: inline;
-  list-style: none;
-  color: black;
+.nav_left,
+.nav_right {
+  flex-basis: 0%;
+  flex-grow: 1;
 }
 
-.menu a {
+.nav_right {
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+li a {
   text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  color: black;
+  color: #000000;
 }
 
-.menu a:hover {
-  border-bottom: 1px solid black;
+li a:hover {
+  border-bottom: 1px solid #000000;
 }
 
 .content {
