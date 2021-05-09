@@ -1,34 +1,21 @@
 <template>
-  <body>
-    <div class="navbar">
-      <div class="nav_left"><p>Christian Benjaminsson</p></div>
-      <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
-      <div class="nav_right">
-        <ul>
-          <li><a href="./home-page.vue">Home</a></li>
-          <li><a href="./contact-page.vue">Contact</a></li>
-        </ul>
-      </div>
+  <div class="navbar">
+    <div class="nav_left"><p>Christian Benjaminsson</p></div>
+    <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
+    <div class="nav_right">
+      <ul>
+        <li><router-link to="/"></router-link>Home</li>
+        <li><router-link to="/contact"></router-link>Contact</li>
+      </ul>
     </div>
-    <div class="content"></div>
-  </body>
+  </div>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style>
-html {
-  height: 100%;
-}
-
-body {
-  max-width: 1200px;
-  min-height: 100%;
-  margin: auto;
-}
-
+<style scoped>
 .navbar {
   display: flex;
   height: 20%;

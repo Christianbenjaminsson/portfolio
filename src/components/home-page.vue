@@ -1,15 +1,6 @@
 <template>
   <body>
-    <div class="header">
-      <div class="nav_left"><p>Christian Benjaminsson</p></div>
-      <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
-      <div class="nav_right">
-        <ul>
-          <li><a href="./home-page.vue">Home</a></li>
-          <li><a href="./contact-page.vue">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <headers></headers>
     <div class="content">
       <div class="box_one" id="squares"></div>
       <div class="box_two" id="squares"></div>
@@ -21,10 +12,7 @@
 
 <script>
 export default {
-  name: "HomePage",
-  props: {
-    msg: String,
-  },
+  name: "home",
   data() {
     return {};
   },
@@ -44,52 +32,13 @@ body {
   margin: auto;
 }
 
-.header {
-  display: flex;
-  height: 20%;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  align-items: center;
-}
-
-#logo {
-  height: 55px;
-  width: 55px;
-}
-
-.nav_left,
-.nav_right {
-  flex-basis: 0%;
-  flex-grow: 1;
-}
-
-.nav_right {
-  text-align: right;
-}
-
-li {
-  display: inline-block;
-  padding: 5px;
-}
-
-li a {
-  text-decoration: none;
-  color: #000000;
-}
-
-li a:hover {
-  border-bottom: 1px solid #000000;
-}
-
 .content {
-  height: 80%;
+  min-height: 80%;
   width: 1000px;
   margin: auto;
   position: relative;
   display: flex;
-  margin-top: 160px;
+  margin-top: 50px;
   justify-content: space-between;
   align-items: center;
 }
