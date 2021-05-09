@@ -14,7 +14,7 @@
       <div class="box_one" id="squares"></div>
       <div class="box_two" id="squares"></div>
       <div class="box_three" id="squares"></div>
-      <div class="box_four" id="squares"></div>
+      <!--<div class="box_four" id="squares"></div>-->
     </div>
   </body>
 </template>
@@ -85,73 +85,98 @@ li a:hover {
 
 .content {
   height: 80%;
-  width: 900px;
+  width: 1000px;
   margin: auto;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 160px;
   justify-content: space-between;
   align-items: center;
 }
 
 #squares {
   border-radius: 30px;
-  height: 300px;
-  width: 430px;
+  height: 250px;
+  width: 300px;
 }
 
 .box_one {
-  background: #659999; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background: #659999;
+  opacity: 0.3;
+  /*background: -webkit-linear-gradient(
     to right,
     #f4791f,
     #659999
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #f4791f,
     #659999
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box_one:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
 .box_two {
-  background: #544a7d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background: #659999;
+  opacity: 0.3;
+  /*background: -webkit-linear-gradient(
     to right,
     #ffd452,
     #544a7d
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #ffd452,
     #544a7d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box_two:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.05);
 }
 
 .box_three {
-  background: #8360c3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background: #659999;
+  opacity: 0.3;
+  /*background: -webkit-linear-gradient(
     to right,
     #2ebf91,
     #8360c3
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #2ebf91,
     #8360c3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.box_four {
-  background: #009fff; /* fallback for old browsers */
+.box_three:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
+/*.box_four {
+  background: #009fff;
   background: -webkit-linear-gradient(
     to right,
     #ec2f4b,
     #009fff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #ec2f4b,
     #009fff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  ); 
+}*/
 </style>
