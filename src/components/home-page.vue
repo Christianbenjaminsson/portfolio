@@ -1,6 +1,6 @@
 <template>
   <body>
-    <headers></headers>
+    <navbar></navbar>
     <div class="content">
       <div class="box_one" id="squares"></div>
       <div class="box_two" id="squares"></div>

@@ -11,11 +11,9 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
-<style scoped>
+<style>
 .navbar {
   display: flex;
   height: 20%;
@@ -43,15 +41,13 @@ export default {};
 
 li {
   display: inline-block;
-  padding: 5px;
 }
 
-li a {
-  text-decoration: none;
-  color: #000000;
+li:not(:last-child) {
+  margin-right: 5px;
 }
 
-li a:hover {
+li:hover {
   border-bottom: 1px solid #000000;
 }
 </style>
