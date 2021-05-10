@@ -4,8 +4,8 @@
     <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
     <div class="nav_right">
       <ul>
-        <li><router-link to="/"></router-link>Home</li>
-        <li><router-link to="/contact"></router-link>Contact</li>
+        <li><a href="/"></a>Home</li>
+        <li><a href="/contact"></a>Contact</li>
       </ul>
     </div>
   </div>
@@ -41,6 +41,7 @@
 
 li {
   display: inline-block;
+  cursor: pointer;
 }
 
 li:not(:last-child) {
