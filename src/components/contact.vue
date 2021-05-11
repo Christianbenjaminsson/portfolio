@@ -1,8 +1,9 @@
 <template>
   <body>
     <navbar></navbar>
-    <div class="content"></div>
-    <a href="mailto:christian.benjaminsson@outlook.com"></a>
+    <div class="content">
+      <a href="mailto:christian.benjaminsson@outlook.com"></a>
+    </div>
   </body>
 </template>
 

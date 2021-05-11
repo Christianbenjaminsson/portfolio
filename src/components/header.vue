@@ -4,10 +4,11 @@
     <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
     <div class="nav_right">
       <ul>
-        <li><a href="/"></a>Home</li>
-        <li><a href="/contact"></a>Contact</li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </div>
+    <router-view />
   </div>
 </template>
 
