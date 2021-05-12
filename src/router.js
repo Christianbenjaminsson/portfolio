@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import home from "./components/home.vue";
+import home from "../views/home.vue";
 
 Vue.use(Router);
 
@@ -14,7 +14,7 @@ export default new Router({
     {
       path: "/contact",
       name: "contact",
-      component: () => import("./components/contact.vue"),
+      component: () => import("../views/contact.vue"),
     },
   ],
 });

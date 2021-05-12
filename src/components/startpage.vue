@@ -1,15 +1,18 @@
 <template>
-  <startpage></startpage>
+  <body>
+    <!--<navbar></navbar>-->
+    <div class="content">
+      <div class="box_one" id="squares"></div>
+      <div class="box_two" id="squares"></div>
+      <div class="box_three" id="squares"></div>
+      <!--<div class="box_four" id="squares"></div>-->
+    </div>
+  </body>
 </template>
 
 <script>
-import startPage from "../src/components/startpage";
-
 export default {
-  name: "home",
-  components: {
-    startPage,
-  },
+  name: "startPage",
   data() {
     return {};
   },
