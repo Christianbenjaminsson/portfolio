@@ -12,16 +12,11 @@
 
 <script>
 export default {
-  name: "startPage",
-  data() {
-    return {};
-  },
-  methods: {},
+  name: "HelloWorld",
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 html {
   height: 100%;
 }

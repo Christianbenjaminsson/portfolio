@@ -1,23 +1,19 @@
 <template>
-  <startpage></startpage>
+  <HelloWorld />
 </template>
 
 <script>
-import startPage from "../src/components/startpage";
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
-    startPage,
+    HelloWorld,
   },
-  data() {
-    return {};
-  },
-  methods: {},
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 html {
   height: 100%;

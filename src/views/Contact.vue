@@ -1,13 +1,16 @@
 <template>
   <body>
-    <navbar></navbar>
     <div class="content">
       <a href="mailto:christian.benjaminsson@outlook.com"></a>
     </div>
   </body>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "Contact",
+};
+</script>
 
 <style>
 html {
