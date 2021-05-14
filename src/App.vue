@@ -22,12 +22,13 @@
 
 <style>
 html {
-  min-height: 100%;
+  height: 100%;
+  background-color: rgb(199, 204, 204);
 }
 
 body {
   max-width: 1200px;
-  min-height: 100%;
+  height: 100%;
   margin: auto;
 }
 
@@ -37,13 +38,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-height: 100%;
+  height: 100%;
 }
 
 .navbar {
   display: flex;
-  height: 20%;
-  padding: 20px;
+  padding: 17px;
   font-size: 18px;
   font-weight: bold;
   color: black;

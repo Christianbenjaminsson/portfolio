@@ -21,7 +21,6 @@ export default {
   margin: auto;
   position: relative;
   display: flex;
-  margin-top: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -33,7 +32,7 @@ export default {
 }
 
 .box_one {
-  background: #659999;
+  background: #ffffff;
   opacity: 0.3;
   /*background: -webkit-linear-gradient(
     to right,
@@ -45,7 +44,7 @@ export default {
     #f4791f,
     #659999
   );*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transition: 0.5s ease-in-out;
 }
 
@@ -55,7 +54,7 @@ export default {
 }
 
 .box_two {
-  background: #659999;
+  background: #ffffff;
   opacity: 0.3;
   /*background: -webkit-linear-gradient(
     to right,
@@ -67,7 +66,7 @@ export default {
     #ffd452,
     #544a7d
   );*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transition: 0.5s ease-in-out;
 }
 
@@ -77,7 +76,7 @@ export default {
 }
 
 .box_three {
-  background: #659999;
+  background: #ffffff;
   opacity: 0.3;
   /*background: -webkit-linear-gradient(
     to right,
@@ -89,7 +88,7 @@ export default {
     #2ebf91,
     #8360c3
   );*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transition: 0.5s ease-in-out;
 }
 
