@@ -1,21 +1,26 @@
 <template>
   <div id="app">
     <div class="navbar">
-      <div class="nav_left"><p>Christian Benjaminsson</p></div>
+      <div class="nav_left">
+        <router-link to="/" class="routerlink"
+          >Christian Benjaminsson</router-link
+        >
+      </div>
       <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
       <div class="nav_right">
         <ul>
           <li><router-link to="/" class="routerlink">Home</router-link></li>
+          |
+          <li>
+            <router-link to="/cv" class="routerlink">CV</router-link>
+          </li>
+          |
           <li>
             <router-link to="/contact" class="routerlink">Contact</router-link>
           </li>
         </ul>
       </div>
     </div>
-    <!-- <div id="navbar">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
     <router-view />
   </div>
 </template>
@@ -23,7 +28,7 @@
 <style>
 html {
   height: 100%;
-  background-color: rgb(199, 204, 204);
+  background-color: #2c3e50;
 }
 
 body {
@@ -37,7 +42,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   height: 100%;
 }
 
@@ -64,16 +68,19 @@ body {
 .nav_right {
   flex-basis: 0%;
   flex-grow: 1;
+  letter-spacing: 1px;
 }
 
 .nav_right {
   text-align: right;
+  font-size: 15px;
 }
 
 li {
   display: inline-block;
   cursor: pointer;
   color: black;
+  margin-left: 5px;
 }
 
 li:not(:last-child) {

@@ -1,19 +1,6 @@
 <template>
   <button class="card">
-    <div class="row clearfix">
-      <div class="left big">070 606 10 91</div>
-      <div class="right">
-        <p>
-          <span class="big">P</span>ierce &amp; <span class="big">P</span>ierce
-        </p>
-        <p>
-          <span class="med no-space">M</span
-          ><span class="small no-space">ergers and </span
-          ><span class="med no-space">A</span
-          ><span class="small no-space">cquisitions</span>
-        </p>
-      </div>
-    </div>
+    <div class="row clearfix"></div>
     <div class="row">
       <p>
         <span class="big">C</span>hristian <span class="big">Benjaminsson</span>
@@ -21,19 +8,10 @@
       <p><span class="big">S</span>ystem <span class="big">D</span>eveloper</p>
     </div>
     <div class="row-end">
-      <p>
-        <span class="med">christian.benjaminsson@outlook.com</span>
-      </p>
+      <p class="big">070 606 10 91</p>
+      <p class="med">christian.benjaminsson@outlook.com</p>
     </div>
   </button>
-  <!--<content>
-    <div class="business_card">
-      <div class="title">Driven systemutvecklare</div>
-      <div class="profile_img">
-        <img src="../assets/profile_pic.jpg" alt="" />
-      </div>
-    </div>
-  </content>-->
 </template>
 
 <script>
@@ -43,10 +21,6 @@ export default {
 </script>
 
 <style>
-/*
-  Hover and click on the card for animations!
-*/
-
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
 
 *,
@@ -59,27 +33,19 @@ html {
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   box-sizing: inherit;
-  font-size: 10.5px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5),
-    -1px -1px 1px rgba(179, 179, 179, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.55),
-    0 1px 3px white;
   overflow: hidden;
   color: #191919;
-  background-color: rgb(199, 204, 204);
 }
 
 button {
   display: block;
   position: relative;
+  align-items: center;
   background: none;
-  color: inherit;
   border: none;
   padding: 0;
-  font: inherit;
   text-transform: inherit;
-  letter-spacing: inherit;
-  text-shadow: inherit;
+  font-size: 12px;
   cursor: pointer;
   outline: inherit;
   z-index: 10;
@@ -104,7 +70,7 @@ button {
   height: 200px;
   width: 350px;
   margin: 20vh auto 0 auto;
-  padding: 20px 10px 10px 10px;
+
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
   /*transform-origin: 50% 100%;*/
   box-shadow: 0;
@@ -163,15 +129,7 @@ button {
 }
 
 .row:nth-child(2) {
-  margin: 35px 0 50px 0;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
+  margin: 25px 0 30px 0;
 }
 
 p {
@@ -179,7 +137,7 @@ p {
 }
 
 .row-end {
-  margin-bottom: 10px !important;
+  margin-bottom: 10px;
 }
 
 /* content {
