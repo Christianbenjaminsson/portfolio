@@ -1,6 +1,10 @@
 <template>
   <body>
     <div class="content">
+      <div class="first">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
       <div class="box_one" id="squares"></div>
       <div class="box_two" id="squares"></div>
       <div class="box_three" id="squares"></div>
@@ -19,10 +23,32 @@ export default {
   min-height: 80%;
   width: 1000px;
   margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  margin-top: 80px;
+  justify-content: center;
   align-items: center;
+}
+
+.first {
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.left {
+  width: 420px;
+  height: 380px;
+  background-color: white;
+}
+
+.right {
+  width: 420px;
+  height: 380px;
+  background-color: white;
 }
 
 #squares {
