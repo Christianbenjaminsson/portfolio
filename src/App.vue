@@ -28,6 +28,7 @@
 <style>
 html {
   height: 100%;
+  width: 100%;
   background-color: #ffffff; /* 2c3e50; */
 }
 
@@ -58,6 +59,7 @@ body {
 #logo {
   height: 55px;
   width: 55px;
+  border-radius: 8px;
 }
 
 .nav_left {
