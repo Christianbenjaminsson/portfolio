@@ -2,12 +2,14 @@
   <body>
     <div class="content">
       <div class="first">
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left"><p>TEXT</p></div>
+        <div class="right"><p>PICTURE</p></div>
       </div>
-      <div class="box_one" id="squares"></div>
-      <div class="box_two" id="squares"></div>
-      <div class="box_three" id="squares"></div>
+      <div class="flex">
+        <div class="box_one" id="squares"><p>TEXT</p></div>
+        <div class="box_two" id="squares"><p>TEXT</p></div>
+        <div class="box_three" id="squares"><p>TEXT</p></div>
+      </div>
     </div>
   </body>
 </template>
@@ -24,16 +26,19 @@ export default {
   width: 1000px;
   margin: auto;
   display: block;
-  margin-top: 80px;
+  margin-top: 40px;
   justify-content: center;
   align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px;
 }
 
 .first {
   display: flex;
   width: 1000px;
   height: 500px;
-  background-color: aquamarine;
+  background-color: lightgrey;
   align-items: center;
   justify-content: space-around;
   padding: 20px;
@@ -42,13 +47,20 @@ export default {
 .left {
   width: 420px;
   height: 380px;
-  background-color: white;
+  background-color: grey;
 }
 
 .right {
   width: 420px;
   height: 380px;
-  background-color: white;
+  background-color: lightgrey;
+}
+
+.flex {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #squares {

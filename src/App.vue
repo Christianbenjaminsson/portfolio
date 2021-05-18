@@ -28,7 +28,7 @@
 <style>
 html {
   height: 100%;
-  background-color: #2c3e50;
+  background-color: #ffffff; /* 2c3e50; */
 }
 
 body {
