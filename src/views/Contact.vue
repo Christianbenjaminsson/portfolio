@@ -1,17 +1,39 @@
 <template>
-  <button class="card">
-    <div class="row clearfix"></div>
-    <div class="row">
-      <p>
-        <span class="big">C</span>hristian <span class="big">Benjaminsson</span>
-      </p>
-      <p><span class="big">S</span>ystem <span class="big">D</span>eveloper</p>
+  <div class="content">
+    <div class="card_section">
+      <button class="card">
+        <div class="row clearfix"></div>
+        <div class="row">
+          <p>
+            <span class="big">C</span>hristian
+            <span class="big">Benjaminsson</span>
+          </p>
+          <p>
+            <span class="big">S</span>ystem <span class="big">D</span>eveloper
+          </p>
+        </div>
+        <div class="row-end">
+          <p class="big">070 606 10 91</p>
+          <p class="med">christian.benjaminsson@outlook.com</p>
+        </div>
+      </button>
     </div>
-    <div class="row-end">
-      <p class="big">070 606 10 91</p>
-      <p class="med">christian.benjaminsson@outlook.com</p>
+    <div class="contact_section">
+      <form action="">
+        <label for="first_name">First name</label>
+        <input type="text" />
+        <label for="last_name">Last name</label>
+        <input type="text" />
+        <label for="email">Email</label>
+        <input type="text" />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
     </div>
-  </button>
+  </div>
 </template>
 
 <script>
@@ -35,6 +57,14 @@ html {
   box-sizing: inherit;
   overflow: hidden;
   color: #191919;
+}
+
+.content {
+  display: block;
+}
+
+.card_section {
+  margin-bottom: 100px;
 }
 
 button {
@@ -140,42 +170,27 @@ p {
   margin-bottom: 10px;
 }
 
-/* content {
-  display: flex;
-  justify-content: center;
-  min-height: 100%;
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.business_card {
-  display: grid;
-  grid-template-columns: 2repeat (auto, auto, auto);
-  grid-template-rows: 3repeat (auto, auto, auto);
-  border: 1px solid black;
-  border-radius: 30px;
-  width: 700px;
-  height: 300px;
-  padding: 30px;
-  margin-top: 70px;
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.title {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-size: 30px;
-  text-align: left;
-  font-weight: bold;
-  color: rgba(30, 139, 195, 1);
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
-
-img {
-  height: 140px;
-  width: 140px;
-}
-
-.profile_img {
-  grid-column-start: 6;
-  grid-column-end: 6;
-} */
 </style>

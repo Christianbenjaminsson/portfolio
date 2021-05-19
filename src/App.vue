@@ -6,7 +6,11 @@
           >Christian Benjaminsson</router-link
         >
       </div>
-      <div class="nav_logo"><img src="@/assets/logo.png" id="logo" /></div>
+      <div class="nav_logo">
+        <router-link to="/"
+          ><img src="@/assets/logo.png" id="logo"
+        /></router-link>
+      </div>
       <div class="nav_right">
         <ul>
           <li><router-link to="/" class="routerlink">Home</router-link></li>
