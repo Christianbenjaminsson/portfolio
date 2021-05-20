@@ -31,7 +31,6 @@ export default {
   display: block;
   font-size: 40px;
   font-weight: bold;
-  padding: 40px;
 }
 
 .big_box {

@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="contact_content">
     <div class="card_section">
       <button class="card">
         <div class="row clearfix"></div>
@@ -30,7 +30,7 @@
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea>
 
-        <input type="submit" value="Send" />
+        <input id="send_button" type="submit" value="Send" />
       </form>
     </div>
   </div>
@@ -45,21 +45,7 @@ export default {
 <style>
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Cormorant Garamond", serif;
-  text-transform: uppercase;
-  box-sizing: inherit;
-  overflow: hidden;
-  color: #191919;
-}
-
-.content {
+.contact_content {
   display: block;
 }
 
@@ -170,6 +156,15 @@ p {
   margin-bottom: 10px;
 }
 
+.contact_section {
+  width: 60%;
+  margin: auto;
+}
+
+label {
+  float: left;
+}
+
 input {
   width: 100%;
   padding: 12px;
@@ -179,6 +174,7 @@ input {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  outline: none;
 }
 
 input[type="submit"] {
@@ -192,5 +188,16 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+#send_button {
+  width: 20%;
+  margin-top: 20px;
+  float: right;
 }
 </style>

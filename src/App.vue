@@ -38,7 +38,6 @@ html {
 
 body {
   max-width: 1200px;
-  height: 100%;
   margin: auto;
 }
 
@@ -52,12 +51,14 @@ body {
 
 .navbar {
   display: flex;
-  padding: 17px;
+  padding: 15px 40px 15px 40px;
+  margin-bottom: 50px;
   font-size: 18px;
   font-weight: bold;
   color: black;
   align-items: center;
   list-style: none;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 #logo {
