@@ -37,7 +37,6 @@ export default {
   display: flex;
   width: 1000px;
   height: 500px;
-  margin-bottom: 100px;
   background-color: lightgrey;
   align-items: center;
   justify-content: space-around;

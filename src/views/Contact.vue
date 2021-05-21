@@ -19,26 +19,41 @@
       </button>
     </div>
     <div class="contact_section">
-      <form action="">
+      <form
+        id="contact_form"
+        action="mailto:christian.benjaminsson@outlook.com"
+        method="post"
+        enctype="text/plain"
+      >
         <label for="first_name">First name</label>
-        <input type="text" />
+        <input type="text" name="first name" />
         <label for="last_name">Last name</label>
-        <input type="text" />
+        <input type="text" name="last name" />
         <label for="email">Email</label>
-        <input type="text" />
-
+        <input type="text" name="email" />
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea>
-
-        <input id="send_button" type="submit" value="Send" />
+        <input
+          id="form_button"
+          type="button"
+          value="Submit"
+          @click="submitForm()"
+        />
       </form>
     </div>
+    <div class="contact_footer"></div>
   </div>
 </template>
 
 <script>
 export default {
   name: "Contact",
+  methods: {
+    submitForm() {
+      document.getElementById("contact_form").submit();
+      document.getElementById("contact_form").reset();
+    },
+  },
 };
 </script>
 
@@ -159,6 +174,7 @@ p {
 .contact_section {
   width: 60%;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 label {
@@ -177,25 +193,24 @@ input {
   outline: none;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: #04aa6d;
   color: white;
-  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #45a049;
 }
 
 textarea {
-  width: 100%;
+  width: 94%;
   height: 100px;
+  padding: 12px 20px;
 }
 
-#send_button {
+#form_button {
   width: 20%;
   margin-top: 20px;
   float: right;
