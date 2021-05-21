@@ -26,6 +26,7 @@
       </div>
     </div>
     <router-view />
+    <div class="footer"></div>
   </div>
 </template>
 
@@ -33,7 +34,7 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: #ffffff; /* 2c3e50; */
+  background-color: #ffffff;
 }
 
 body {
@@ -101,5 +102,9 @@ li:hover {
 .routerlink {
   color: #000000;
   text-decoration: none;
+}
+
+.footer {
+  height: 50px;
 }
 </style>
