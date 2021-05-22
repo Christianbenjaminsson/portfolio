@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <div class="navbar">
-      <div class="nav_left">
-        <router-link to="/" class="routerlink"
-          >Christian Benjaminsson</router-link
-        >
-      </div>
-      <div class="nav_logo">
-        <router-link to="/"
-          ><img src="@/assets/logo.png" id="logo"
-        /></router-link>
-      </div>
-      <div class="nav_right">
-        <ul>
-          <li><router-link to="/" class="routerlink">Home</router-link></li>
-          |
-          <li>
-            <router-link to="/cv" class="routerlink">CV</router-link>
-          </li>
-          |
-          <li>
-            <router-link to="/contact" class="routerlink">Contact</router-link>
-          </li>
-        </ul>
+    <div class="navbar_container">
+      <div class="navbar">
+        <div class="nav_left">
+          <router-link to="/" class="routerlink"
+            >Christian Benjaminsson</router-link
+          >
+        </div>
+        <div class="nav_logo">
+          <router-link to="/"
+            ><img src="@/assets/logo.png" id="logo"
+          /></router-link>
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li><router-link to="/" class="routerlink">Home</router-link></li>
+            |
+            <li>
+              <router-link to="/cv" class="routerlink">CV</router-link>
+            </li>
+            |
+            <li>
+              <router-link to="/contact" class="routerlink"
+                >Contact</router-link
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <router-view />
@@ -31,29 +35,25 @@
 </template>
 
 <style>
-html {
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: auto;
   height: 100%;
   width: 100%;
   background-color: #ffffff;
 }
 
-body {
-  max-width: 1200px;
-  margin: auto;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  height: 100%;
+.navbar_container {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .navbar {
   display: flex;
   padding: 15px 40px 15px 40px;
-  margin-bottom: 50px;
   font-size: 18px;
   font-weight: bold;
   color: black;

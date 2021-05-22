@@ -1,21 +1,19 @@
 <template>
-  <body>
-    <div class="content">
-      <div class="big_box">
-        <div class="left"><p>TEXT</p></div>
-        <div class="right"><p>PICTURE</p></div>
-      </div>
-      <div class="flex">
-        <div class="small_box"><p>TEXT</p></div>
-        <div class="small_box"><p>TEXT</p></div>
-        <div class="small_box"><p>TEXT</p></div>
-      </div>
-      <div class="big_box">
-        <div class="left"><p>TEXT</p></div>
-        <div class="right"><p>PICTURE</p></div>
-      </div>
+  <div class="content">
+    <div class="big_box">
+      <div class="left"><p>TEXT</p></div>
+      <div class="right"><p>PICTURE</p></div>
     </div>
-  </body>
+    <div class="flex">
+      <div class="small_box"><p>TEXT</p></div>
+      <div class="small_box"><p>TEXT</p></div>
+      <div class="small_box"><p>TEXT</p></div>
+    </div>
+    <div class="big_box">
+      <div class="left"><p>TEXT</p></div>
+      <div class="right"><p>PICTURE</p></div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -26,8 +24,8 @@ export default {
 
 <style scoped>
 .content {
-  width: 1000px;
   margin: auto;
+  margin-top: 160px;
   display: block;
   font-size: 40px;
   font-weight: bold;
@@ -37,6 +35,7 @@ export default {
   display: flex;
   width: 1000px;
   height: 500px;
+  margin-bottom: 100px;
   background-color: lightgrey;
   align-items: center;
   justify-content: space-around;
