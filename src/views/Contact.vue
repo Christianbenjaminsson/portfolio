@@ -103,7 +103,6 @@ button {
   margin: 20vh auto 0 auto;
 
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
-  /*transform-origin: 50% 100%;*/
   box-shadow: 0;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
