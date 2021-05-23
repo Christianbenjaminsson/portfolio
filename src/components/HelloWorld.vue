@@ -25,21 +25,23 @@ export default {
 <style scoped>
 .content {
   margin: auto;
+  justify-content: center;
+  width: 1200px;
   margin-top: 160px;
-  display: block;
-  font-size: 40px;
-  font-weight: bold;
 }
 
 .big_box {
   display: flex;
-  width: 1000px;
+  width: 950px;
   height: 500px;
+  margin: auto;
   margin-bottom: 100px;
   background-color: lightgrey;
   align-items: center;
   justify-content: space-around;
   padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .left {
@@ -69,6 +71,8 @@ export default {
   opacity: 0.3;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transition: 0.5s ease-in-out;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .small_box:hover {
