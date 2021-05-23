@@ -68,7 +68,6 @@ export default {
   height: 250px;
   width: 300px;
   background: #ffffff;
-  opacity: 0.3;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transition: 0.5s ease-in-out;
   font-size: 40px;
