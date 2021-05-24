@@ -204,9 +204,13 @@ input[type="button"]:hover {
 }
 
 textarea {
-  width: 94%;
+  width: 95%;
   height: 100px;
   padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
 }
 
 #form_button {
