@@ -21,28 +21,41 @@
     <div class="Work">
       <h1>Work</h1>
       <div class="work-table">
-        <table>
-          <tr>
-            <td>2021-03 - 2021-05</td>
-            <td>Inext</td>
-          </tr>
-          <tr>
-            <td>
-              Pratikplats där jag arbetar med att utveckla mjukvara med hjälp av
-              ramverken Angular och Vue
-            </td>
-          </tr>
-          <tr>
-            <td>2020-09 - 2020-12</td>
-            <td>VGR IT</td>
-          </tr>
-          <tr>
-            <td>
-              Praktikplats där jag arbetade i ett agilt projekt med uppgift att
-              uppdatera regionens integrationer.
-            </td>
-          </tr>
-        </table>
+        <div class="work-description">
+          <table>
+            <th>Datum</th>
+            <th>Företag</th>
+            <tr>
+              <td>2021-03 - 2021-05</td>
+              <td>Inext</td>
+            </tr>
+            <th colspan="2">Arbetsuppgifter</th>
+            <tr>
+              <td colspan="2">
+                Pratikplats där jag arbetar med att utveckla mjukvara med hjälp
+                av ramverken Angular och Vue
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="work-description">
+          <table>
+            <th>Datum</th>
+            <th>Företag</th>
+            <tr>
+              <td>2020-09 - 2020-12</td>
+              <td>VGR IT</td>
+            </tr>
+            <th colspan="2">Arbetsuppgifter</th>
+            <tr>
+              <td colspan="2">
+                Praktikplats där jag arbetade i ett agilt projekt med uppgift
+                att uppdatera regionens integrationer.
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -56,13 +69,19 @@
   margin-top: 100px;
 }
 
-.education-table {
-  display: flex;
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.education {
+  display: block;
   justify-content: center;
 }
 
-.work-table {
-  display: flex;
-  justify-content: center;
+.work {
+  display: block;
+  margin: auto;
 }
 </style>
