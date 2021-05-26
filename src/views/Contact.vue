@@ -16,6 +16,11 @@
           <p class="big">070 606 10 91</p>
           <p class="med">christian.benjaminsson@outlook.com</p>
         </div>
+        <div class="socialmedia">
+          <a href="" class="fa fa-facebook"></a>
+          <a href="" class="fa fa-instagram"></a>
+          <a href="" class="fa fa-linkedin"></a>
+        </div>
       </button>
     </div>
     <div class="contact_section">
@@ -101,7 +106,6 @@ button {
   height: 200px;
   width: 350px;
   margin: 20vh auto 0 auto;
-
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
   box-shadow: 0;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
