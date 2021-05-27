@@ -157,6 +157,36 @@ button {
   transform: skewY(45deg) translateX(6px) translateY(-3px);
 }
 
+.socialmedia {
+  display: flex;
+  max-width: 160px;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 18px;
+  width: 20px;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.fa-facebook {
+  background: #bfbfbf;
+  color: white;
+}
+
+.fa-instagram {
+  background: #bfbfbf;
+  color: white;
+}
+.fa-linkedin {
+  background: #bfbfbf;
+  color: white;
+}
+
 .row {
   display: block;
   text-align: center;
