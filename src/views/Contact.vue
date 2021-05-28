@@ -87,11 +87,11 @@ button {
   z-index: 10;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 .big {
   font-size: 150%;
@@ -106,23 +106,23 @@ button {
   height: 200px;
   width: 350px;
   margin: 20vh auto 0 auto;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
-  box-shadow: 0;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(10px);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.card:hover {
+/* .card:hover {
   cursor: pointer;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(10px);
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
-}
+} */
 
-.card:focus {
+/* .card:focus {
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(10px);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
-}
+} */
 
-.card:focus::before {
+/* .card:focus::before {
   transform: skewX(0deg) translateX(0px) translateY(0px);
   height: 0px;
 }
@@ -130,16 +130,16 @@ button {
 .card:focus::after {
   transform: skewY(0deg) translateX(0px) translateY(0px);
   width: 0px;
-}
+} */
 
-.card::before,
+/* .card::before,
 .card::after {
   content: "";
   position: absolute;
   display: block;
   background-color: grey;
   transition: transform 0.4s ease, height 0.4s ease, width 0.4s ease;
-}
+} */
 
 .card::before {
   width: 100%;
@@ -170,20 +170,20 @@ button {
   font-size: 18px;
   width: 20px;
   text-decoration: none;
-  border-radius: 40px;
+  border-radius: 50%;
 }
 
 .fa-facebook {
-  background: #bfbfbf;
+  background: #dbd1bd;
   color: white;
 }
 
 .fa-instagram {
-  background: #bfbfbf;
+  background: #dbd1bd;
   color: white;
 }
 .fa-linkedin {
-  background: #bfbfbf;
+  background: #dbd1bd;
   color: white;
 }
 
@@ -227,14 +227,17 @@ input {
 }
 
 input[type="button"] {
-  background-color: #04aa6d;
+  background-color: #f4f1eb;
   color: white;
+  width: 20%;
+  margin-top: 20px;
+  float: right;
   border: none;
   cursor: pointer;
 }
 
 input[type="button"]:hover {
-  background-color: #45a049;
+  background-color: #dbd1bd;
 }
 
 textarea {
@@ -245,11 +248,5 @@ textarea {
   border-radius: 4px;
   resize: none;
   outline: none;
-}
-
-#form_button {
-  width: 20%;
-  margin-top: 20px;
-  float: right;
 }
 </style>
