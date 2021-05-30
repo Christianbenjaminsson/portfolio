@@ -32,11 +32,11 @@ export default {
 
 .big_box {
   display: flex;
-  width: 950px;
+  width: 100%;
   height: 500px;
   margin: auto;
   margin-bottom: 100px;
-  background-color: lightgrey;
+  background-color: #501b1d;
   align-items: center;
   justify-content: space-around;
   padding: 20px;
@@ -45,9 +45,11 @@ export default {
 }
 
 .left {
-  width: 420px;
-  height: 380px;
-  background-color: grey;
+  width: 440px;
+  height: 440px;
+  background-color: #64485c;
+  color: #64485c;
+  border-radius: 50%;
 }
 
 .right {

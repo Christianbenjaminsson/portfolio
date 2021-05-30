@@ -1,6 +1,6 @@
 <template>
   <div class="cv-content">
-    <a href="assets/another.pdf" download>Download</a>
+    <a href="./assets/test.docx" download>Download link</a>
     <div class="education">
       <h2>Education</h2>
       <table>

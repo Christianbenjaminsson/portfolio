@@ -89,7 +89,6 @@
 li {
   display: inline-block;
   cursor: pointer;
-  color: black;
   margin-left: 5px;
 }
 
@@ -102,7 +101,7 @@ li:hover {
 }
 
 .routerlink {
-  color: #000000;
+  color: #adadad;
   text-decoration: none;
 }
 
