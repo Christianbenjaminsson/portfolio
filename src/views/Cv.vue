@@ -19,6 +19,20 @@
 
     <div class="work">
       <h2>Work</h2>
+      <table class="resume"></table>
+      <tr>
+        <td><strong>mars 2021</strong></td>
+        <td><img src="@/assets/inext_logo.png" alt="" /></td>
+        <td><strong>iNext AB</strong></td>
+      </tr>
+      <tr>
+        <td><strong>till maj 2021</strong></td>
+        <td></td>
+        <td>
+          Pratikplats där jag arbetar med att utveckla mjukvara med hjälp av
+          ramverken Angular och Vue
+        </td>
+      </tr>
       <div class="work-description">
         <table>
           <tr>

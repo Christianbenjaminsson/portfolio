@@ -39,9 +39,8 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   height: 100%;
-  margin: auto;
-  height: 100%;
   width: 100%;
+  margin: auto;
   background-color: #ffffff;
 }
 
