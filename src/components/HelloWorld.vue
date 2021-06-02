@@ -2,7 +2,9 @@
   <div class="content">
     <div class="big_box">
       <div class="left"><p>TEXT</p></div>
-      <div class="right"><p>PICTURE</p></div>
+      <div class="right">
+        <img src="@/assets/crown.png" alt="" class="right_img" />
+      </div>
     </div>
     <div class="flex">
       <div class="small_box"><p>TEXT</p></div>
@@ -53,9 +55,13 @@ export default {
 }
 
 .right {
-  width: 420px;
+  width: 520px;
   height: 380px;
-  background-color: lightgrey;
+}
+
+.right_img {
+  width: 500px;
+  height: 380px;
 }
 
 .flex {
