@@ -38,7 +38,7 @@ export default {
   height: 500px;
   margin: auto;
   margin-bottom: 100px;
-  background-color: #501b1d;
+  background-color: #ffffff;
   align-items: center;
   justify-content: space-around;
   padding: 20px;
@@ -62,6 +62,7 @@ export default {
 .right_img {
   width: 500px;
   height: 380px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .flex {
