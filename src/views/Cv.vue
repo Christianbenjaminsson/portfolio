@@ -19,48 +19,35 @@
 
     <div class="work">
       <h2>Work</h2>
-      <table class="resume"></table>
-      <tr>
-        <td><strong>mars 2021</strong></td>
-        <td><img src="@/assets/inext_logo.png" alt="" /></td>
-        <td><strong>iNext AB</strong></td>
-      </tr>
-      <tr>
-        <td><strong>till maj 2021</strong></td>
-        <td></td>
-        <td>
-          Pratikplats där jag arbetar med att utveckla mjukvara med hjälp av
-          ramverken Angular och Vue
-        </td>
-      </tr>
-      <div class="work-description">
-        <table>
-          <tr>
-            <td>2021-03 - 2021-05</td>
-            <td>Inext</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              Pratikplats där jag arbetar med att utveckla mjukvara med hjälp av
-              ramverken Angular och Vue
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="work-description">
-        <table>
-          <tr>
-            <td>2020-09 - 2020-12</td>
-            <td>VGR IT</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              Praktikplats där jag arbetade i ett agilt projekt med uppgift att
-              uppdatera regionens integrationer.
-            </td>
-          </tr>
-        </table>
-      </div>
+      <table class="resume">
+        <tr>
+          <td><strong>mars 2021</strong></td>
+          <td><img class="img_logo" src="@/assets/inext_logo.png" alt="" /></td>
+          <td><strong>iNext AB</strong></td>
+        </tr>
+        <tr>
+          <td><strong>till maj 2021</strong></td>
+          <td></td>
+          <td>
+            Pratikplats där jag arbetar med att utveckla mjukvara med hjälp av
+            ramverken Angular och Vue
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>september 2020</strong></td>
+          <td><img class="img_logo" src="@/assets/vgrit_logo.png" alt="" /></td>
+          <td><strong>VGR IT</strong></td>
+        </tr>
+        <tr>
+          <td><strong>till december 2020</strong></td>
+          <td></td>
+          <td>
+            Praktikplats där jag arbetade i ett agilt projekt med uppgift att
+            uppdatera regionens integrationer.
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -86,9 +73,8 @@ table {
   width: 100%;
 }
 
-.education {
-}
-
-.work {
+.img_logo {
+  height: 50px;
+  width: 100px;
 }
 </style>
