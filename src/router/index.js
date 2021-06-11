@@ -20,11 +20,6 @@ const routes = [
     name: "Contact",
     component: () => import("../views/Contact.vue"),
   },
-  {
-    path: "/cv",
-    name: "CV",
-    component: () => import("../views/CV.vue"),
-  },
 ];
 
 const router = new VueRouter({

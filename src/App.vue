@@ -17,10 +17,6 @@
             <li><router-link to="/" class="routerlink">Home</router-link></li>
             |
             <li>
-              <router-link to="/cv" class="routerlink">CV</router-link>
-            </li>
-            |
-            <li>
               <router-link to="/contact" class="routerlink"
                 >Contact</router-link
               >
