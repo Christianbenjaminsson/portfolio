@@ -13,7 +13,9 @@
     </div>
     <div class="big_box">
       <div class="left"><p>TEXT</p></div>
-      <div class="right"><p>PICTURE</p></div>
+      <div class="right">
+        <img src="@/assets/todo_mobile.png" alt="" class="right_img" />
+      </div>
     </div>
   </div>
 </template>
