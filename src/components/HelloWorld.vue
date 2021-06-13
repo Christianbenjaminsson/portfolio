@@ -1,6 +1,17 @@
 <template>
   <div class="content">
     <div class="big_box">
+      <div class="introduction">
+        <p>
+          Jag är en driven junior systemutvecklare som gillar att utvecklas och
+          testa på nya tekniker.
+        </p>
+      </div>
+      <div class="right">
+        <img src="@/assets/profile_pic.png" alt="" class="profile_img" />
+      </div>
+    </div>
+    <div class="big_box">
       <div class="left"><p>TEXT</p></div>
       <div class="right">
         <img src="@/assets/crown.png" alt="" class="right_img" />
@@ -56,6 +67,11 @@ export default {
   border-radius: 50%;
 }
 
+.introduction {
+  width: 440px;
+  height: 440px;
+}
+
 .right {
   width: 520px;
   height: 380px;
@@ -65,6 +81,12 @@ export default {
   width: 500px;
   height: 380px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.profile_img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 
 .flex {
