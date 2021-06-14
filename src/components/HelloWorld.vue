@@ -45,6 +45,11 @@ export default {
   margin-top: 160px;
 }
 
+.introduction {
+  width: 440px;
+  height: 440px;
+}
+
 .big_box {
   display: flex;
   width: 100%;
@@ -60,16 +65,12 @@ export default {
 }
 
 .left {
-  width: 440px;
-  height: 440px;
+  width: 500px;
+  height: 380px;
   background-color: #64485c;
-  color: #64485c;
-  border-radius: 50%;
-}
-
-.introduction {
-  width: 440px;
-  height: 440px;
+  opacity: 0.5;
+  color: #ffffff;
+  border-radius: 20px;
 }
 
 .right {
