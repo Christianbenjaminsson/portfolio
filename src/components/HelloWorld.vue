@@ -2,10 +2,18 @@
   <div class="content">
     <div class="big_box">
       <div class="introduction">
-        <p>
-          Jag är en driven junior systemutvecklare som gillar att utvecklas och
-          testa på nya tekniker.
+        <p style="color: #adadad; font-size: 36px"><b>VÄLKOMMEN!</b></p>
+        <p style="font-size: 24px; color: #adadad">
+          <b>Driven</b> junior systemutvecklare som gillar att
+          <b>utvecklas</b> och testa på nya <b>tekniker</b>.
         </p>
+        <button class="intro_button">
+          <a
+            href="mailto: christian.benjaminsson@outlook.com"
+            style="text-decoration: none; color: black"
+          ></a
+          >kontakt
+        </button>
       </div>
       <div class="right">
         <img src="@/assets/profile_pic.png" alt="" class="profile_img" />
@@ -50,6 +58,24 @@ export default {
   height: 440px;
 }
 
+b {
+  color: #64485c;
+}
+
+.intro_button {
+  margin-top: 35px;
+  padding: 18px 55px;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  background-color: lightgrey;
+}
+
+.intro_button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .big_box {
   display: flex;
   width: 100%;
@@ -60,8 +86,6 @@ export default {
   align-items: center;
   justify-content: space-around;
   padding: 20px;
-  font-size: 40px;
-  font-weight: bold;
 }
 
 .left {
