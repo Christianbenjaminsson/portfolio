@@ -90,9 +90,9 @@ b {
 
 .left {
   width: 500px;
-  height: 380px;
+  height: 365px;
   background-color: #64485c;
-  opacity: 0.5;
+  opacity: 0.3;
   color: #ffffff;
   border-radius: 20px;
 }
