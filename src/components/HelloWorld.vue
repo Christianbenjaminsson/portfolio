@@ -20,7 +20,12 @@
       </div>
     </div>
     <div class="big_box">
-      <div class="left"><p>TEXT</p></div>
+      <div class="left">
+        <p>
+          E-handel byggd i React. Med Redux, Hooks, GraphQL, ContextAPI, Stripe,
+          Firebase
+        </p>
+      </div>
       <div class="right">
         <img src="@/assets/crown.png" alt="" class="right_img" />
       </div>
@@ -31,7 +36,12 @@
       <div class="small_box"><p>TEXT</p></div>
     </div>
     <div class="big_box">
-      <div class="left"><p>TEXT</p></div>
+      <div class="left">
+        <p>
+          Skolprojekt där vi byggde en att-göra applikation för att tilldela och
+          acceptera serviceorder.
+        </p>
+      </div>
       <div class="right">
         <img src="@/assets/todo_mobile.png" alt="" class="right_img" />
       </div>
@@ -92,9 +102,11 @@ b {
   width: 500px;
   height: 365px;
   background-color: #64485c;
-  opacity: 0.3;
+  opacity: 0.2;
   color: #ffffff;
   border-radius: 20px;
+  padding: 10px;
+  font-size: 40px;
 }
 
 .right {
@@ -109,9 +121,8 @@ b {
 }
 
 .profile_img {
-  width: 400px;
+  width: 300px;
   height: 400px;
-  border-radius: 50%;
 }
 
 .flex {
