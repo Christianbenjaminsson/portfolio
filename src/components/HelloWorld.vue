@@ -66,6 +66,8 @@ export default {
 .introduction {
   width: 440px;
   height: 440px;
+  justify-content: center;
+  align-items: center;
 }
 
 b {
